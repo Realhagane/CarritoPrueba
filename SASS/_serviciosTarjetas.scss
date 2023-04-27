@@ -1,0 +1,147 @@
+@import "variables.scss";
+
+@mixin titulos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+.servicios {
+    display: grid;
+    background-color: rgb(236, 236, 119);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    padding: 5%;
+
+    @media screen and (max-width: 1130px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    @media screen and (max-width:390px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.servicios__tarjetas {
+    img {
+        width: 80%;
+        margin-top: 20px;
+        border-radius: 15px;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: 600ms;
+        }
+
+
+    }
+
+    h3 {
+        padding: 20px 0px;
+        font-size: 25px;
+        margin: 10px 0;
+    }
+
+    a {
+        padding: 10px 0;
+        color: #1a1818;
+        text-transform: uppercase;
+        display: inline-block;
+        font-weight: bold;
+
+        &:hover {
+            border-bottom: 2px solid rgb(0, 0, 0);
+        }
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    @media screen and (max-width: 1130px) {
+        &:nth-of-type(1) {
+            order: 4;
+        }
+
+        &:nth-of-type(2) {
+            order: 3;
+        }
+
+        &:nth-of-type(3) {
+            order: 2;
+        }
+
+    }
+
+}
+
+.servicios__tarjetas--centro {
+    margin-left: 10px;
+    align-self: center;
+
+    @media screen and (max-width: 1130px) {
+        &:nth-of-type(4) {
+            order: 1;
+        }
+    }
+}
+
+.tarjetas__titulo {
+    @include titulos;
+    color: rgb(255, 255, 255);
+
+}
+
+.tarjetas__titulo--blanco {
+    @include titulos;
+    color: rgb(255, 255, 255);
+
+    &:hover {
+        border-bottom: 3px solid #ffffff;
+        transition: 800ms;
+
+    }
+
+}
+
+.tarjetas__titulo--negro {
+    @include titulos;
+    color: rgb(0, 0, 0);
+
+    &:hover {
+        border-bottom: 3px solid #d1ae44;
+        transition: 800ms;
+
+    }
+
+}
+
+.seccion__servicios {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.servicios--seccion {
+    display: grid;
+    position: relative;
+    height: auto;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+    @media screen and (max-width: 1250px) {
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+.servicios__seccion__contenedor {
+    display: block;
+    margin: auto;
+}

@@ -1,0 +1,95 @@
+@import "variables.scss";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    padding: 0px;
+    margin: 0px;
+}
+
+.logo {
+    width: 500px;
+
+    &:hover {
+        transition: 600ms;
+        transform: scale(1.5);
+    }
+}
+
+.w-100:hover {
+    transition: 600ms;
+    transform: scale(1.1);
+}
+
+.px-3 {
+    margin-top: 97px;
+    padding: 90px;
+    background-image: url(../Images/cabeceraweb2.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 38% 62%;
+
+}
+
+
+
+.display-5 {
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 10px black;
+    margin-bottom: 100px;
+}
+
+
+.secciones__title {
+    display: flex;
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.galeria {
+    display: grid;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 5%;
+
+    @media screen and (max-width: 1130px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.galeria__contenedor {
+
+    @media screen and (max-width: 900px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width:390px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

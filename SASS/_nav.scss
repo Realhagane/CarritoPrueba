@@ -1,0 +1,45 @@
+@import "variables.scss";
+
+
+.header {
+
+    padding: 0 5%;
+}
+
+.navbar {
+    padding: 25px 0px;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    color: $colorPlata;
+
+
+    ul li a {
+        font-size: 18px;
+        font-weight: 300;
+        color: $colorNegro;
+
+        &:hover {
+            border-bottom: 1px solid;
+            color: $colorPrimario;
+            transition: 1100ms;
+        }
+    }
+
+}
+
+.navbar__texto1 {
+    font-size: 25px;
+    color: $colorPrimario;
+    display: inline;
+}
+
+.navbar__texto2 {
+    font-size: 25px;
+    display: inline;
+
+    &:hover {
+        color: $colorSecundario;
+        transition: 600ms;
+
+    }
+}

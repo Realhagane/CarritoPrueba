@@ -1,0 +1,78 @@
+.contacto {
+    display: grid;
+    height: auto;
+    min-height: 600px;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding-top: 20px;
+
+    @media screen and (max-width: 1130px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+}
+
+
+.contacto__formulario {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: rgb(236, 236, 119);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+    padding: 20px;
+    margin: 10px;
+
+}
+
+.formulario__campos {
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: rgb(221, 222, 223);
+
+}
+
+.formulario__titulo {
+
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.btn_enviar {
+    display: block;
+    width: 200px;
+    margin: auto;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    border-color: rgb(221, 222, 223);
+}
+
+
+.mapa_contenedor {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.contacto__mapa--estilo {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+    border-color: rgb(221, 222, 223);
+    box-shadow: 5px 9px 10px 1px rgba(182, 182, 182, 0.59);
+
+
+}

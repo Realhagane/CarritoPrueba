@@ -1,0 +1,50 @@
+@import "variables.scss";
+@import "btn.scss";
+
+
+.hero {
+    display: flex;
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+    align-items: center;
+    background-image: url(../Images/cabecerawebprincipal.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 38% 62%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    margin-top: 90px;
+
+
+}
+
+.hero__title {
+    font-size: 5em;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 10px black;
+    margin-bottom: 100px;
+    font-weight: bold;
+}
+
+
+
+.hero__btn {
+    color: $colorNegro;
+    background-color: $colorTerciario;
+    font-size: 19px;
+    border: 0px solid #ffffff;
+    border-radius: 15px;
+    padding: 15px 50px;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px black;
+
+    &:hover {
+        color: #cf1515;
+        background-color: #ababab;
+        transition: 500ms;
+
+    }
+}
